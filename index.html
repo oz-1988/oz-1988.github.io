@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,7 +19,7 @@
         }
 
         header {
-            background-color: #333;
+            background-color: black;
             color: white;
             text-align: center;
             padding: 1.5rem 0;
@@ -66,6 +65,23 @@
         .typewriter-container {
             display: inline;
         }
+
+        .typewriter-cursor {
+            display: inline;
+            font-weight: normal;
+            animation: blink 1s steps(1) infinite;
+            margin-left: -6px;
+            vertical-align: top;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .contact {
+            text-align: center;
+        }
+
     </style>
 </head>
 
@@ -74,7 +90,7 @@
         <h1>Guilherme Oz</h1>
         <h3>
             <span class="typewriter-container">De</span>
-            <span class="typewriter-cursor">|</span>
+            <span class="typewriter-cursor">/</span>
         </h3>
     </header>
 
@@ -106,8 +122,9 @@
                     target="_blank">https://linkedin.com/in/guilherme-oz</a></p>
         </section>
     </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+  </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
             const container = document.querySelector(".typewriter-container");
             const originalText = ["signer", "veloper"];
             container.textContent = "De";
@@ -148,7 +165,5 @@
 
             typeWriter();
         });
-    </script>
-</body>
-
+</script>
 </html>
