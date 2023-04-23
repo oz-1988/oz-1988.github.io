@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,7 +50,11 @@
         }
 
         .project {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             margin-bottom: 1rem;
+            padding: 1rem;
         }
 
         a {
@@ -79,7 +83,18 @@
         }
 
         .contact {
+            display: flex;
+            justify-content: space-between;
             text-align: center;
+        }
+
+        .contact-column {
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .contact-column:last-child {
+            margin-right: 0;
         }
 
     </style>
@@ -113,16 +128,19 @@
                 <p>Short description of Project 2</p>
             </div>
         </section>
-
         <section class="contact">
-            <h2>Contact Me</h2>
-            <p>oz@guilhermeoz.com</a></p>
-            <p><a href="https://kodawise.xyz" target="_blank">KodaWise</a></p>
-            <p><a href="https://github.com/oz-1988" target="_blank">Github</a></p>
-            <p><a href="https://linkedin.com/in/guilherme-oz" target="_blank">Linkedin</a></p>
-        </section>
-    </main>
-  </body>
+        <h2>Contact Me</h2>
+        <div class="contact-column">
+            <p>Email: <a href="mailto:oz@guilhermeoz.com">oz@guilhermeoz.com</a></p>
+            <p>Website: <a href="https://kodawise.xyz" target="_blank">KodaWise</a></p>
+        </div>
+        <div class="contact-column">
+            <p>Github: <a href="https://github.com/oz-1988" target="_blank">oz-1988</a></p>
+            <p>Linkedin: <a href="https://linkedin.com/in/guilherme-oz" target="_blank">guilherme-oz</a></p>
+        </div>
+    </section>
+</main>
+    </body>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
             const container = document.querySelector(".typewriter-container");
